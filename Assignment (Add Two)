@@ -1,0 +1,28 @@
+;// Catherine Schnelle
+;// Assignment / Lab 04
+;// COSC - 2325 5001 14A
+include Irvine.inc
+
+
+
+.code
+main PROC
+mov   eax, 1
+call DumpRegs; 1st value
+call DumpRegs; 2nd value
+
+mov   ebx, 0; initial setup
+mov   edx, 1
+mov   ecx, 6; count
+
+L1 :
+mov  eax, ebx; eax = ebx + edx
+add  eax, edx
+call DumpRegs; display eax
+mov  ebx, edx
+mov  edx, eax
+Loop L1
+
+exit
+main ENDP
+END main
