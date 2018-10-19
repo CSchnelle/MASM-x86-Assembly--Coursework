@@ -1,9 +1,4 @@
-;// Catherine Schnelle
-;// Assignment / Lab 04
-;// COSC - 2325 5001 14A
 include Irvine.inc
-
-
 
 .code
 main PROC
